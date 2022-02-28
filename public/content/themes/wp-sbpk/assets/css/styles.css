@@ -618,13 +618,19 @@ input[type='checkbox'] {
 /*******************/
 /*     Details     */
 /*******************/
+.split {
+	display: flex;
+}
+
 .split .area-1 {
+	width: 50%;
 	height: 430px;
 	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/details-background.jpg') center center no-repeat;
 	background-size: cover;
 }
 
 .split .area-2 {
+	width: 50%;
 	padding-top: 7.75rem;
 	padding-bottom: 7.75rem;
 }
