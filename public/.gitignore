@@ -20,6 +20,7 @@ content/*
 
 content/themes/*
 !content/themes
+!content/themes/wp-sbpk
 #!content/themes/custom_theme
 
 content/plugins/*
