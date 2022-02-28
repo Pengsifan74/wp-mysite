@@ -1,0 +1,12 @@
+CURRENT_PATH=$(pwd);
+
+. $CURRENT_PATH"/config.sh"
+. $CURRENT_PATH"/_include/functions.sh"
+
+
+WP_fixChmod;
+
+
+echo "✔️ Fixing remote $PRODUCTION_IMAGES_PATH  chmod";
+ssh -i $SSH_KEY $PRODUCTION_USER@$PRODUCTION_SERVER sudo chown -R $PRODUCTION_USER:www-data $PRODUCTION_IMAGES_PATH
+scp -r -i $SSH_KEY $PRODUCTION_USER@$PRODUCTION_SERVER:$PRODUCTION_IMAGES_PATH/* $LOCAL_IMAGES_PATH

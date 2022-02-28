@@ -1,0 +1,3 @@
+path: wp
+apache_modules:
+  - mod_rewrite
