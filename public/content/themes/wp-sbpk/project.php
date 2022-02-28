@@ -9,13 +9,13 @@
 <body data-spy="scroll" data-target=".fixed-top">
 
     <!-- Navigation-->
-    <?php get_template_part('partials/navbar.ptl'); ?>
+    <?php get_template_part('partials/navbar.tpl'); ?>
 
     <!-- Header-->
-    <?php get_template_part('partials/header.ptl'); ?>
+    <?php get_template_part('partials/header.tpl'); ?>
 
     <!-- section (project) -->
-    <?php get_template_part('partials/project.ptl'); ?>
+    <?php get_template_part('partials/project.tpl'); ?>
 
     <!-- wp footer -->
     <?php get_footer(); ?>

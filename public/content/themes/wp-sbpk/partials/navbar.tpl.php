@@ -3,7 +3,7 @@
         <div class="container">
 
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.php"><img src="assets/images/SBPKlogo.png" alt="alternative"></a>
+            <a class="navbar-brand logo-image" href="index.php"><img src="assets/images/logo.svg" alt="alternative"></a>
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->

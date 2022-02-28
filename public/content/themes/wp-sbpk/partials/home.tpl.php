@@ -90,12 +90,12 @@
                             <p>I am familiar and work on a daily basis with HTML, CSS, JavaScript, Bootstrap and other modern frameworks</p>
 
                             <div class="icons-container">
-                                <img src="images/details-icon-photoshop.png" alt="alternative">
-                                <img src="images/details-icon-illustrator.png" alt="alternative">
-                                <img src="images/details-icon-html.png" alt="alternative">
-                                <img src="images/details-icon-css.png" alt="alternative">
-                                <img src="images/details-icon-bootstrap.png" alt="alternative">
-                                <img src="images/details-icon-javascript.png" alt="alternative">
+                                <img src="./assets/images/details-icon-photoshop.png" alt="alternative">
+                                <img src="./assets/images/details-icon-illustrator.png" alt="alternative">
+                                <img src="./assets/images/details-icon-html.png" alt="alternative">
+                                <img src="./assets/images/details-icon-css.png" alt="alternative">
+                                <img src="./assets/images/details-icon-bootstrap.png" alt="alternative">
+                                <img src="./assets/images/details-icon-javascript.png" alt="alternative">
                             </div> <!-- end of icons-container -->
                         </div> <!-- end of text-container -->
                         <!-- end of text container -->
@@ -122,7 +122,7 @@
                     <div class="text-container">
                         <div class="image-container">
                             <a href="project.html">
-                                <img class="img-fluid" src="images/project-1.jpg" alt="alternative">
+                                <img class="img-fluid" src="assets/images/project-1.jpg" alt="alternative">
                             </a>
                         </div> <!-- end of image-container -->
                         <p><strong>For:</strong> Jumbotron, <strong>Project:</strong> web design for their corporate websites and landing pages for marketing campaigns <a class="blue" href="project.html">details</a></p>
@@ -130,7 +130,7 @@
                     <div class="text-container">
                         <div class="image-container">
                             <a href="project.html">
-                                <img class="img-fluid" src="images/project-2.jpg" alt="alternative">
+                                <img class="img-fluid" src="assets/images/project-2.jpg" alt="alternative">
                             </a>
                         </div> <!-- end of image-container -->
                         <p><strong>For:</strong> Carsrepo, <strong>Project:</strong> designed and developed modern platform for purchasing second hand cars online <a class="blue" href="project.html">details</a></p>
@@ -138,7 +138,7 @@
                     <div class="text-container">
                         <div class="image-container">
                             <a href="project.html">
-                                <img class="img-fluid" src="images/project-3.jpg" alt="alternative">
+                                <img class="img-fluid" src="assets/images/project-3.jpg" alt="alternative">
                             </a>
                         </div> <!-- end of image-container -->
                         <p><strong>For:</strong> Truevideo, <strong>Project:</strong> created a custom video editing and upload web app for this awesome team <a class="blue" href="project.html">details</a></p>
@@ -146,7 +146,7 @@
                     <div class="text-container">
                         <div class="image-container">
                             <a href="project.html">
-                                <img class="img-fluid" src="images/project-4.jpg" alt="alternative">
+                                <img class="img-fluid" src="assets/images/project-4.jpg" alt="alternative">
                             </a>
                         </div> <!-- end of image-container -->
                         <p><strong>For:</strong> Evolosim, <strong>Project:</strong> complete redesign of their corporate website and platform update for their online shop <a class="blue" href="project.html">details</a></p>
@@ -166,7 +166,7 @@
                     <div class="text-container">
                         <div class="image-container">
                             <a href="project.html">
-                                <img class="img-fluid" src="images/work-1.jpg" alt="alternative">
+                                <img class="img-fluid" src="assets/images/work-1.jpg" alt="alternative">
                             </a>
                         </div> <!-- end of image-container -->
                         <p><strong>For:</strong> Zigoland, <strong>Project:</strong> started a new website from ground up for a new product <a class="blue" href="project.html">details</a></p>
@@ -176,7 +176,7 @@
                     <div class="text-container">
                         <div class="image-container">
                             <a href="project.html">
-                                <img class="img-fluid" src="images/work-2.jpg" alt="alternative">
+                                <img class="img-fluid" src="assets/images/work-2.jpg" alt="alternative">
                             </a>
                         </div> <!-- end of image-container -->
                         <p><strong>For:</strong> Visodream, <strong>Project:</strong> developed a new forum for the Visodream community <a class="blue" href="project.html">details</a></p>
@@ -186,7 +186,7 @@
                     <div class="text-container">
                         <div class="image-container">
                             <a href="project.html">
-                                <img class="img-fluid" src="images/work-3.jpg" alt="alternative">
+                                <img class="img-fluid" src="assets/images/work-3.jpg" alt="alternative">
                             </a>
                         </div> <!-- end of image-container -->
                         <p><strong>For:</strong> Primoday, <strong>Project:</strong> complete redesign of their corporate website and platform <a class="blue" href="project.html">details</a></p>
@@ -198,7 +198,7 @@
                     <div class="text-container">
                         <div class="image-container">
                             <a href="project.html">
-                                <img class="img-fluid" src="images/work-4.jpg" alt="alternative">
+                                <img class="img-fluid" src="assets/images/work-4.jpg" alt="alternative">
                             </a>
                         </div> <!-- end of image-container -->
                         <p><strong>For:</strong> Nextlite, <strong>Project:</strong> created a custom video editing and upload web app <a class="blue" href="project.html">details</a></p>
@@ -208,7 +208,7 @@
                     <div class="text-container">
                         <div class="image-container">
                             <a href="project.html">
-                                <img class="img-fluid" src="images/work-5.jpg" alt="alternative">
+                                <img class="img-fluid" src="assets/images/work-5.jpg" alt="alternative">
                             </a>
                         </div> <!-- end of image-container -->
                         <p><strong>For:</strong> Syncnow, <strong>Project:</strong> web design for their corporate websites and landing pages <a class="blue" href="project.html">details</a></p>
@@ -218,7 +218,7 @@
                     <div class="text-container">
                         <div class="image-container">
                             <a href="project.html">
-                                <img class="img-fluid" src="images/work-6.jpg" alt="alternative">
+                                <img class="img-fluid" src="assets/images/work-6.jpg" alt="alternative">
                             </a>
                         </div> <!-- end of image-container -->
                         <p><strong>For:</strong> Shifter, <strong>Project:</strong> started a new website from ground up for a new product <a class="blue" href="project.html">details</a></p>
@@ -246,7 +246,7 @@
                         <div class="card-body">
                             <p class="testimonial-text">“Mark is a skilled developer which will do everything possible to deliver the project on time and I really appreciate that”</p>
                             <div class="details">
-                                <img src="images/testimonial-1.jpg" alt="alternative">
+                                <img src="assets/images/testimonial-1.jpg" alt="alternative">
                                 <div class="text">
                                     <div class="testimonial-author">Samantha Bloom</div>
                                     <div class="occupation">Team Leader - Syncnow</div>
@@ -261,7 +261,7 @@
                         <div class="card-body">
                             <p class="testimonial-text">“Loved to work with Mark he's such an awesome developer with great attention to details. He also has a great eye for design”</p>
                             <div class="details">
-                                <img src="images/testimonial-2.jpg" alt="alternative">
+                                <img src="assets/images/testimonial-2.jpg" alt="alternative">
                                 <div class="text">
                                     <div class="testimonial-author">John Rowling</div>
                                     <div class="occupation">Marketing Manager - Nexlite</div>
@@ -276,7 +276,7 @@
                         <div class="card-body">
                             <p class="testimonial-text">“So glad we started working with Mark. We've used many times his design and development skills for our inhouse online projects”</p>
                             <div class="details">
-                                <img src="images/testimonial-3.jpg" alt="alternative">
+                                <img src="assets/images/testimonial-3.jpg" alt="alternative">
                                 <div class="text">
                                     <div class="testimonial-author">Lana Smith</div>
                                     <div class="occupation">General Manager - Shifter</div>

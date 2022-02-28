@@ -9,16 +9,16 @@
 <body data-spy="scroll" data-target=".fixed-top">
 
     <!-- Navigation-->
-    <?php get_template_part('partials/navbar.ptl'); ?>
+    <?php get_template_part('partials/navbar.tpl'); ?>
 
     <!-- Header-->
-    <?php get_template_part('partials/header.ptl'); ?>
+    <?php get_template_part('partials/header.tpl'); ?>
 
     <!-- Section (home) -->
-    <?php get_template_part('partials/home.ptl'); ?>
+    <?php get_template_part('partials/home.tpl'); ?>
 
     <!-- Footer-->
-    <?php get_template_part('partials/footer.ptl'); ?>
+    <?php get_template_part('partials/footer.tpl'); ?>
 
     <!-- wp footer -->
     <?php get_footer(); ?>
