@@ -13,7 +13,7 @@
     <?php get_template_part('partials/header.tpl'); ?>
 
     <!-- Section (terms) -->
-    <?php get_template_part('partials/terms.tpl'); ?>
+    <?php get_template_part('partials/terms/terms.tpl'); ?>
 
     <!-- wp footer -->
     <?php get_footer(); ?>
