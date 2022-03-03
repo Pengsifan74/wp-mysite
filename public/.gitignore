@@ -25,4 +25,6 @@ content/themes/*
 
 content/plugins/*
 !content/plugins/
+!content/plugins/wdl
+!content/plugins/wdl-demo
 #!content/plugins/custom_plugin
