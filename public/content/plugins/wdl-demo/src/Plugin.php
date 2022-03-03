@@ -34,21 +34,25 @@ class Plugin extends \WDL\Plugin
         parent::getTaxonomiesDescriptors();
 
         return [
-            'specie' => [
-                'customPostTypes' => ['pet'],
-                'label' => 'Species',
+            'school' => [
+                'customPostTypes' => ['education'],
+                'label' => 'Schools',
                 'hierarchical' => false,
-                'defaultTerms' => [
-                    'Dog',
-                    'Cat',
-                    'Bird',
-                    'Fish',
-                ]
             ],
-            'has-disease' => [
-                'customPostTypes' => ['pet'],
-                'label' => 'Diseases',
-                'hierarchical' => false
+            'city' => [
+                'customPostTypes' => ['education', 'experience'],
+                'label' => 'Cities',
+                'hierarchical' => false,
+            ],
+            'country' => [
+                'customPostTypes' => ['education', 'experience'],
+                'label' => 'Countries',
+                'hierarchical' => false,
+            ],
+            'technology' => [
+                'customPostTypes' => ['project'],
+                'label' => 'Technologies',
+                'hierarchical' => false,
             ]
         ];
     }
