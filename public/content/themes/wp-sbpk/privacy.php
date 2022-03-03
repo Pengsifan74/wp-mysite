@@ -1,9 +1,11 @@
+<?php /* Template Name: Privacy */ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!-- wp header -->
-    <?php get_header(); ?>
+    <!-- <?php get_header(); ?> -->
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">

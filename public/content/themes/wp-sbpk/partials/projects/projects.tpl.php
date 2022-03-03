@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-fluid mt-5 mb-3" src="images/project-details-large.jpg" alt="alternative">
+                    <img class="img-fluid mt-5 mb-3" src="<?= get_theme_file_uri('assets/images/project-details-large.jpg') ?>" alt="alternative">
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->

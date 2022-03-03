@@ -1,3 +1,5 @@
+<?php /* Template Name: Projects */ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +17,7 @@
     <?php get_template_part('partials/header.tpl'); ?>
 
     <!-- section (project) -->
-    <?php get_template_part('partials/projects/project.tpl'); ?>
+    <?php get_template_part('partials/projects/projects.tpl'); ?>
 
     <!-- wp footer -->
     <?php get_footer(); ?>

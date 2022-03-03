@@ -26,15 +26,22 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item page-scroll" href="project.php">Project Details</a>
+                            <a class="dropdown-item page-scroll" href="project.php">My education</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="terms.php">Terms Conditions</a>
+                            <a class="dropdown-item page-scroll" href="project.php">My experiences</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="privacy.php">Privacy Policy</a>
+                            <a class="dropdown-item page-scroll" href="<?= get_theme_file_uri('page-projects.php') ?>">Project Details</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="<?= get_theme_file_uri ('page-terms.php') ?>">Terms Conditions</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="<?= get_theme_file_uri('page-privacy.php') ?>">Privacy Policy</a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#blog">Blog</a>
                     </li>
                 </ul>
                 <span class="nav-item social-icons">

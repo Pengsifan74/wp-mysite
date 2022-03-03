@@ -1,3 +1,5 @@
+<?php /* Template Name: Terms */ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
