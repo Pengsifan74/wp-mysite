@@ -28,7 +28,7 @@
                             <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <?php
                         // récupération du menu désiré (ce dernier a été créé dans le backoffice de wp)
-                        $menuObject = wp_get_nav_menu_object('NavBar');
+                        $menuObject = wp_get_nav_menu_object('Drop');
 
                         // récupération des items du menu (il faut passer l'id du menu à la fonction wp_get_nav_menu_items)
                         $menuItems = wp_get_nav_menu_items($menuObject->term_id);
