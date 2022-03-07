@@ -4,8 +4,8 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="text-container first">
-                        <h2>Hi there I'm Mark,</h2>
-                        <p>And I love to create beautiful and efficient websites for my customers. I love going through the entire process with the customer from concept, to design and then development and launch</p>
+                        <h2>Hi there I'm Stephane,</h2>
+                        <p>And I love to use WordPress to develop websites. I can use HTML, CSS, PHP, Javascript... and I can code according to the Object-Oriented Programming paradigm...</p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
