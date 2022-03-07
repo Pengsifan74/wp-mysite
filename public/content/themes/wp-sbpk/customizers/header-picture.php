@@ -3,11 +3,11 @@
 
 add_action(
     'customize_register',   // event pour enregistrer nos customizer
-    'register_hero_picture_customizer'
+    'register_header_picture_customizer'
 );
 
 // DOC CUSTOMIZER Manager : https://developer.wordpress.org/reference/classes/wp_customize_manager/
-function register_hero_picture_customizer(WP_Customize_Manager $themeCustomizerObject)
+function register_header_picture_customizer(WP_Customize_Manager $themeCustomizerObject)
 {
 
     // identifiant de la section qui s'affichera dans le backoffice de wordpress (appearance->customize)
@@ -18,17 +18,17 @@ function register_hero_picture_customizer(WP_Customize_Manager $themeCustomizerO
     $customizableVariableName = 'header-picture';
 
     // une valeur par défaut pour la variable définie au dessus
-    $defaultValue = get_theme_file_uri('assets//images/header-background.jpg');
+    $defaultValue = get_theme_file_uri('assets/images/header-background.jpg');
 
     // selecteur css pour cibler la "bannière" dans notre thème
-    $customizerButtonCssSelector = '.text-container';
+    $customizerButtonCssSelector = '#header';
 
 
     $themeCustomizerObject->add_section(
         $customSectionName,    // identifiant de la section (custom-section-colors)
         [
             // la fonction __(...) permet de gérer l'I18N  (InternationalizatioN)
-            'title' => __("Theme pictures"), // libellé de la section
+            'title' => __("Header pictures"), // libellé de la section
             'priority' => 0   // dans quel ordre la section va s'afficher dans le menu , 0 correspond à "tout en haut" de la liste
         ]
     );
@@ -48,9 +48,9 @@ function register_hero_picture_customizer(WP_Customize_Manager $themeCustomizerO
         // WP_Customize_Image_Control est un composant wordpress qui permet de choisir une image
         new WP_Customize_Image_Control(
             $themeCustomizerObject, // l'objet "customizer" $themeCustomizerObject
-            'hero-picture-selector',  // identifiant du composant (nous choisissons le nom de façon arbitraire)
+            'header-picture-selector',  // identifiant du composant (nous choisissons le nom de façon arbitraire)
             [
-                'label' => __('Hero picture'),    // le libellé du composant
+                'label' => __('Header picture'),    // le libellé du composant
                 'section' => $customSectionName,   // la section dans laquelle afficher le composant
                 'settings' => $customizableVariableName, // la variable configurable ('banner-picture')
             ]
@@ -78,10 +78,10 @@ function register_hero_picture_customizer(WP_Customize_Manager $themeCustomizerO
 
 add_action(
     'customize_preview_init',   // Event pour charger les assets dédié à la préview du customizer
-    'oprofile_load_hero_picture_customizer_assets'
+    'wp_mysite_load_header_picture_customizer_assets'
 );
 
-function oprofile_load_hero_picture_customizer_assets()
+function wp_mysite_load_header_picture_customizer_assets()
 {
 
     // Nous chargeons notre css pour la preview du customizer afin de pouvoir surcharger les styles
@@ -91,8 +91,8 @@ function oprofile_load_hero_picture_customizer_assets()
     );
 
     wp_enqueue_script(
-        'hero-picture-customizer-js',
-        get_theme_file_uri('assets/customizers/hero-picture.js'),
+        'header-picture-customizer-js',
+        get_theme_file_uri('assets/customizers/header-picture.js'),
         [], // gestion des dépendances,
         false,
         true // nous demandons à wp de mettre le javascript dans le footer
