@@ -1,6 +1,5 @@
 console.log('%c' + "header-picture.js loaded", 'color: #0bf; font-size: 1rem; background-color:#fff');
 
-
 // au chargement de la page
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -18,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // nous ciblons la bannière
         console.log(newValue);
 
-        let headerPicture = document.querySelector('.header');
+        let headerPicture = document.querySelector('.header .row');
         // nous changeons l'image
         headerPicture.setAttribute('src', newValue);
 
