@@ -12,7 +12,7 @@
     <?php get_template_part('partials/navbar.tpl'); ?>
 
     <!-- Header-->
-    <?php get_template_part('partials/header.tpl'); ?>
+    <?php get_template_part('partials/home/header-home.tpl'); ?>
 
     <!-- Section (home) -->
     <?php get_template_part('partials/home/about.tpl'); ?>
