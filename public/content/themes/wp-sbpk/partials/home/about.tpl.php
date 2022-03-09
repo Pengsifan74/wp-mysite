@@ -1,11 +1,23 @@
-    <!-- About-->
+<?php
+
+$myObjective = get_theme_mod('myObjective');
+if(!$myObjective) {
+    $myObjective = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tenetur libero
+    reiciendis nulla pariatur nemo veniam quae, distinctio, fugiat perferendis possimus eius deleniti ab
+    placeat. Error laudantium voluptas debitis recusandae, inventore, vitae tenetur esse totam quibusdam
+    nesciunt deleniti reprehenderit quae praesentium. Beatae facere rerum deleniti consequatur quasi itaque
+    dolor vel?';
+}
+?>
+
+<!-- About-->
     <div id="about" class="basic-1 bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="text-container first">
                         <h2>Hi there I'm Stephane,</h2>
-                        <p>And I love to use WordPress to develop websites. I can use HTML, CSS, PHP, Javascript... and I can code according to the Object-Oriented Programming paradigm...</p>
+                        <p class="myObjective"><?=$myObjective;?></p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-4">

@@ -1,4 +1,4 @@
-console.log('%c' + "header-picture.js loaded", 'color: #0bf; font-size: 1rem; background-color:#fff');
+console.log('%c' + "banner-picture.js loaded", 'color: #0bf; font-size: 1rem; background-color:#fff');
 
 // au chargement de la page
 document.addEventListener("DOMContentLoaded", function() {
@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // utilisation de la bibliothèque javascript worpdress dédiée au customizer (fournie par wordpress)
   wp.customize(
     // sur quelle variable le javascript doit gérer le live preview
-    'header-picture',
+    'myObjective',
 
     // déclaration de la fonction qui "gère" la variable customisée
     function(value) {
@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
         // nous ciblons la bannière
         console.log(newValue);
 
-        let headerPicture = document.querySelector('.header .container');
+        let footerText = document.querySelector('.myObjective');
         // nous changeons l'image
-        headerPicture.setAttribute('src', newValue);
+        footerText.innerHTML = newValue;
 
         //==========================
 

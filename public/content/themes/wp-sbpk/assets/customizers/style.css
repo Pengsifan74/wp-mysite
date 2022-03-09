@@ -2,3 +2,8 @@
     opacity: 1;
     cursor: default;
   }
+
+.header-picture {
+  width: 100%;
+  text-align: center;
+}

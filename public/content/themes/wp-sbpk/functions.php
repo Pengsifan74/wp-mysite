@@ -5,6 +5,7 @@
 // exit();
 
 require __DIR__ . '/customizers/header-picture.php';
+require __DIR__ . '/customizers/myObjective.php';
 
 if (!defined('THEME_SBPKWPDEV_VERSION')) {
     define('THEME_SBPKWPDEV_VERSION', '1.0.0');

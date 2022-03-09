@@ -5,14 +5,14 @@ $style = '';
 if($backgroundImage) {
     $style = 'background:' .
         'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),'.
-        'url(' . $backgroundImage . ')'
+        'url(' . $backgroundImage . ')' . 'center no-repeat'
     ;
 }
 
 ?>
    
    <!-- Header -->
-    <header id="header" class="header" style="<?= $style; ?>">
+    <header id="header" class="header" style="<?= $style; ?>; background-size: cover;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
