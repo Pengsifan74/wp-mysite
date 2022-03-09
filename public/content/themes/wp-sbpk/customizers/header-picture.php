@@ -21,7 +21,7 @@ function register_header_picture_customizer(WP_Customize_Manager $themeCustomize
     $defaultValue = get_theme_file_uri('assets/images/header-background.jpg');
 
     // selecteur css pour cibler la "bannière" dans notre thème
-    $customizerButtonCssSelector = '#header';
+    $customizerButtonCssSelector = '.header .row';
 
 
     $themeCustomizerObject->add_section(
@@ -34,7 +34,7 @@ function register_header_picture_customizer(WP_Customize_Manager $themeCustomize
     );
 
 
-
+// Declare a customizable variable
     $themeCustomizerObject->add_setting(
         $customizableVariableName,   // nom de la variable ('header-picture')
         [
@@ -43,8 +43,8 @@ function register_header_picture_customizer(WP_Customize_Manager $themeCustomize
         ]
     );
 
+    // Component to use to configure the customizable variable 
     $themeCustomizerObject->add_control(
-
         // WP_Customize_Image_Control est un composant wordpress qui permet de choisir une image
         new WP_Customize_Image_Control(
             $themeCustomizerObject, // l'objet "customizer" $themeCustomizerObject
@@ -52,7 +52,7 @@ function register_header_picture_customizer(WP_Customize_Manager $themeCustomize
             [
                 'label' => __('Header picture'),    // le libellé du composant
                 'section' => $customSectionName,   // la section dans laquelle afficher le composant
-                'settings' => $customizableVariableName, // la variable configurable ('banner-picture')
+                'settings' => $customizableVariableName, // la variable configurable ('header-picture')
             ]
         )
     );
@@ -62,7 +62,7 @@ function register_header_picture_customizer(WP_Customize_Manager $themeCustomize
 
     $themeCustomizerObject->selective_refresh->add_partial(
         // pour quelle variable "le petit crayon" va s'appliquer
-        $customizableVariableName, // (banner-picture)
+        $customizableVariableName, // (header-picture)
         [
             // selecteur css pour indiquer dans quel élément de la page le petit crayon du customizer doit s'afficher
             'selector' => $customizerButtonCssSelector,

@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // nous ciblons la bannière
         console.log(newValue);
 
-        let headerPicture = document.querySelector('#header');
+        let headerPicture = document.querySelector('.header');
         // nous changeons l'image
         headerPicture.setAttribute('src', newValue);
 
