@@ -71,9 +71,6 @@ function register_header_picture_customizer(WP_Customize_Manager $themeCustomize
     );
 }
 
-
-
-
 //==================================================================
 
 add_action(
@@ -87,12 +84,12 @@ function wp_mysite_load_header_picture_customizer_assets()
     // Nous chargeons notre css pour la preview du customizer afin de pouvoir surcharger les styles
     wp_enqueue_style(
         'customizer-style',
-        get_theme_file_uri('assets/customizers/style.css'),
+        get_theme_file_uri('../assets/customizers/style.css'),
     );
 
     wp_enqueue_script(
         'header-picture-customizer-js',
-        get_theme_file_uri('assets/customizers/header-picture.js'),
+        get_theme_file_uri('../assets/customizers/header-picture.js'),
         [], // gestion des dépendances,
         false,
         true // nous demandons à wp de mettre le javascript dans le footer
