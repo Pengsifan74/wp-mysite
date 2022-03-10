@@ -1,0 +1,17 @@
+/* Pagination */
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
+
+/* Post Custom */
+
+.expPicture {
+    text-align: center;
+}
+
+.expCertificate {
+    width: 70%;
+}

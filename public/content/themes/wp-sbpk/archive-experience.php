@@ -5,14 +5,6 @@ $articleId = get_the_ID();
 
 $hasImage = has_post_thumbnail($articleId);
 
-// si l'article a une image de mise en avant
-if ($hasImage) {
-    // récupération de l'url de l'image de mise en avant
-    $thumbnail = get_the_post_thumbnail_url();
-} else {
-    $thumbnail = 'https://media.istockphoto.com/photos/long-wave-on-the-coast-dawn-on-the-sea-tunisia-picture-id1173935107?b=1&k=20&m=1173935107&s=170667a&w=0&h=JkyPsbVUkRTuLlNgiS63HEqbMJTRPgE8jiGsNRfWlyU=';
-}
-
 $cities = get_the_terms(
     $post->ID,
     'city'
@@ -22,6 +14,9 @@ $countries = get_the_terms(
     $post->ID,
     'country'
 );
+
+$previous = get_previous_post();
+dump($previous);
 
 ?>
 
@@ -53,20 +48,6 @@ $countries = get_the_terms(
             <p>
                 From <?= get_field('date_from') ?> to <?= get_field('date_to') ?>
             </p>
-            <p><?php
-                if (count($countries) <= 1) : ?>
-                    Country :
-                    <?php foreach ($countries as $key => $value) :
-                        echo $value->name ?>
-                    <?php endforeach;
-                else : ?>
-                    Countries :
-                    <?php foreach ($countries as $key => $value) :
-                        echo $value->name ?>,
-            <?php endforeach;
-
-                endif; ?>
-            </p>
 
             <p><?php
                 if (count($cities) <= 1) : ?>
@@ -83,10 +64,31 @@ $countries = get_the_terms(
                 endif; ?>
             </p>
 
+            <p><?php
+                if (count($countries) <= 1) : ?>
+                    Country :
+                    <?php foreach ($countries as $key => $value) :
+                        echo $value->name ?>
+                    <?php endforeach;
+                else : ?>
+                    Countries :
+                    <?php foreach ($countries as $key => $value) :
+                        echo $value->name ?>,
+            <?php endforeach;
+
+                endif; ?>
+            </p>
+
             <p class="expContent"><?php the_content(); ?></p>
             <div class="expPicture">
+                <p><?php get_template_part('partials/post-previous-next.tpl'); ?></p>
                 <h4>My work certificate :</h4>
-                <img class="post__header__image" src="<?= $thumbnail ?>">
+                <?php if ($hasImage) :
+                    $thumbnail = get_the_post_thumbnail_url(); ?>
+                    <img class="expCertificate" src="<?= $thumbnail ?>">
+                <?php else : ?>
+                    <p>NO DOCUMENT TO DISPLAY</p>
+                <?php endif; ?>
             </div>
 
         </article>
