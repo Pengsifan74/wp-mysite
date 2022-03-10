@@ -48,6 +48,11 @@ if (!function_exists('sbpkwpdev_loadAssets')) {
         );
 
         wp_enqueue_style(
+            'wp-mysite-styles',
+            get_theme_file_uri('assets/css/wp_mysite.css')
+        );
+
+        wp_enqueue_style(
             'preconnection-google-font',
             'https://fonts.gstatic.com'
         );
