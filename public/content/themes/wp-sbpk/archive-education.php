@@ -45,9 +45,16 @@ $countries = get_the_terms(
                 <?= get_the_title(); ?>
             </h3>
             <p class>
-                At <?php foreach ($schools as $key => $value) {
-                        echo $value->name;
-                    } ?>
+                At <?php
+                    if (count($schools) <= 1) : ?>
+                    <?php foreach ($schools as $key => $value) :
+                            echo $value->name ?>
+                    <?php endforeach;
+                    else : ?>
+                    <?php foreach ($schools as $key => $value) :
+                            echo $value->name ?>,
+            <?php endforeach;
+                    endif; ?>
             </p>
             <p>
                 From <?= get_field('date_from') ?> to <?= get_field('date_to') ?>
