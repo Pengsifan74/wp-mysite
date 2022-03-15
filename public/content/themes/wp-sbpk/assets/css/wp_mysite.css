@@ -10,12 +10,26 @@
 
 .expTitle {
     margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.eduTitle {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .expPicture {
     text-align: center;
 }
 
+.eduPicture {
+    text-align: center;
+}
+
 .expCertificate {
+    width: 70%;
+}
+
+.eduCertificate {
     width: 70%;
 }
