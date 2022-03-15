@@ -24,11 +24,11 @@
                             <a class="nav-link page-scroll" href="#services">Services</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My career</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <?php
                         // récupération du menu désiré (ce dernier a été créé dans le backoffice de wp)
-                        $menuObject = wp_get_nav_menu_object('Drop');
+                        $menuObject = wp_get_nav_menu_object('My career');
 
                         // récupération des items du menu (il faut passer l'id du menu à la fonction wp_get_nav_menu_items)
                         $menuItems = wp_get_nav_menu_items($menuObject->term_id);
