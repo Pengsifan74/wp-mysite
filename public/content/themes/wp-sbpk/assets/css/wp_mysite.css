@@ -8,6 +8,10 @@
 
 /* Post Custom */
 
+.expTitle {
+    margin-top: 2rem;
+}
+
 .expPicture {
     text-align: center;
 }

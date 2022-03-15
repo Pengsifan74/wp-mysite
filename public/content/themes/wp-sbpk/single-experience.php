@@ -36,7 +36,7 @@ $countries = get_the_terms(
     <main>
         <article class="container">
 
-            <h3 class="expH3">
+            <h3 class="expTitle">
                 <?= get_the_title(); ?>
             </h3>
             <p class>

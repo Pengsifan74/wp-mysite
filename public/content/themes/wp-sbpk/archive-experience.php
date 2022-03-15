@@ -15,9 +15,6 @@ $countries = get_the_terms(
     'country'
 );
 
-$previous = get_previous_post();
-dump($previous);
-
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +36,7 @@ dump($previous);
     <main>
         <article class="container">
 
-            <h3 class="expH3">
+            <h3 class="expTitle">
                 <?= get_the_title(); ?>
             </h3>
             <p class>
