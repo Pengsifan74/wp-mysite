@@ -8,6 +8,23 @@ if(!$myObjective) {
     nesciunt deleniti reprehenderit quae praesentium. Beatae facere rerum deleniti consequatur quasi itaque
     dolor vel?';
 }
+
+$argEdu = array(
+    'post_type' => 'experience',
+    'post_status' => 'publish',
+    'posts_per_page' => 3,
+    'order' => 'DESC'
+);
+$dataEdu = new WP_Query($argEdu);
+
+$argExp = array(
+    'post_type' => 'education',
+    'post_status' => 'publish',
+    'posts_per_page' => 3,
+    'order' => 'DESC'
+);
+$dataExp = new WP_Query($argExp);
+// dump($dataExperiences);
 ?>
 
 <!-- About-->
@@ -22,22 +39,22 @@ if(!$myObjective) {
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
                     <div class="text-container second">
-                        <div class="time">2019 - PRESENT</div>
-                        <h6>Freelance Web Developer</h6>
-                        <p>Working happily on my own web projects</p>
-                        <div class="time">2018 - 2019</div>
-                        <h6>Lead Web Developer</h6>
-                        <p>Beautiful project for a major digital agency</p>
+                        <h5>My last educations</h5>
+                        <?php while ($dataExp->have_posts()) : $dataExp->the_post(); ?>
+                        <div class="time">From <?= get_field('date_from') ?> to <?= get_field('date_to') ?></div>
+                        <h6><a href="<?= get_permalink() ?>"><?php print the_title(); ?></a></h6>
+                        <p><?php the_excerpt(); ?></p>
+                        <?php endwhile; ?>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
                     <div class="text-container third">
-                        <div class="time">2017 - 2018</div>
-                        <h6>Senior Web Designer</h6>
-                        <p>Inhouse web designer for ecommerce firm</p>
-                        <div class="time">2016 - 2017</div>
-                        <h6>Junior Web Designer</h6>
-                        <p>Junior web designer for small web agency</p>
+                        <h5>My last experiences</h5>
+                    <?php while ($dataEdu->have_posts()) : $dataEdu->the_post(); ?>
+                        <div class="time">From <?= get_field('date_from') ?> to <?= get_field('date_to') ?></div>
+                        <h6><a href="<?= get_permalink() ?>"><?php print the_title(); ?></a></h6>
+                        <p><?php the_excerpt(); ?></p>
+                        <?php endwhile; ?>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
