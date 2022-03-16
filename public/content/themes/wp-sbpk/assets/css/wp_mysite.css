@@ -33,3 +33,20 @@
 .eduCertificate {
     width: 70%;
 }
+
+/* Details part */
+@media screen and (max-width: 415px) {
+    .split {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .area-1 {
+        width: 100% !important;
+        height: 430px;
+    }
+    
+    .area-2 {
+        width: 100% !important;
+    }
+}
