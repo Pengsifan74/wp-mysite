@@ -39,7 +39,7 @@ if($backgroundImage) {
                                 <img src="<?= get_theme_file_uri('assets/images/details-icon-vuetify.png') ?>" alt="alternative">                                
                                 <img src="<?= get_theme_file_uri('assets/images/details-icon-command.png') ?>" alt="alternative">
                                 <img src="<?= get_theme_file_uri('assets/images/details-icon-git.png') ?>" alt="alternative">
-
+                                <img src="<?= get_theme_file_uri('assets/images/details-icon-github.png') ?>" alt="alternative">
 
                             </div> <!-- end of icons-container -->
                         </div> <!-- end of text-container -->
