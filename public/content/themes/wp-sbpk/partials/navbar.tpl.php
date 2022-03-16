@@ -92,13 +92,13 @@ $urlHome = get_home_url();
                     </ul>
                     <span class="nav-item social-icons">
                         <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://github.com/Brewalan74" target="_blank">
                                 <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                <i class="fab fa-github fa-stack-1x"></i>
                             </a>
                         </span>
                         <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://twitter.com/brew_spk" target="_blank">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-twitter fa-stack-1x"></i>
                             </a>
