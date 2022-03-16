@@ -3,24 +3,23 @@
 
 add_action(
     'customize_register',   // event pour enregistrer nos customizer
-    'register_header_picture_customizer'
+    'register_whyme_picture_customizer'
 );
 
 // DOC CUSTOMIZER Manager : https://developer.wordpress.org/reference/classes/wp_customize_manager/
-function register_header_picture_customizer(WP_Customize_Manager $themeCustomizerObject)
+function register_whyme_picture_customizer(WP_Customize_Manager $themeCustomizerObject)
 {
-
     // identifiant de la section qui s'affichera dans le backoffice de wordpress (appearance->customize)
     $customSectionName = 'custom-section-pictures';
 
     // création d'une variable configurable grace à un customizer
-    $customizableVariableName = 'header-picture';
+    $customizableVariableName = 'whyme-picture';
 
     // une valeur par défaut pour la variable définie au dessus
-    $defaultValue = get_theme_file_uri('assets/images/header-background.jpg');
+    $defaultValue = get_theme_file_uri('assets/images/details-background.jpg');
 
     // selecteur css pour cibler la "bannière" dans notre thème
-    $customizerButtonCssSelector = '.header .container';
+    $customizerButtonCssSelector = '.split .area-2';
 
 
     $themeCustomizerObject->add_section(
@@ -28,12 +27,11 @@ function register_header_picture_customizer(WP_Customize_Manager $themeCustomize
         [
             // la fonction __(...) permet de gérer l'I18N  (InternationalizatioN)
             'title' => __("Homepage pictures"), // libellé de la section
-            'priority' => 0   // dans quel ordre la section va s'afficher dans le menu , 0 correspond à "tout en haut" de la liste
+            'priority' => 2   // dans quel ordre la section va s'afficher dans le menu , 0 correspond à "tout en haut" de la liste
         ]
     );
 
-
-// Declare a customizable variable
+    // Declare a customizable variable
     $themeCustomizerObject->add_setting(
         $customizableVariableName,   // nom de la variable ('header-picture')
         [
@@ -47,15 +45,14 @@ function register_header_picture_customizer(WP_Customize_Manager $themeCustomize
         // WP_Customize_Image_Control est un composant wordpress qui permet de choisir une image
         new WP_Customize_Image_Control(
             $themeCustomizerObject, // l'objet "customizer" $themeCustomizerObject
-            'header-picture-selector',  // identifiant du composant (nous choisissons le nom de façon arbitraire)
+            'whyme-picture-selector',  // identifiant du composant (nous choisissons le nom de façon arbitraire)
             [
-                'label' => __('Header picture'),    // le libellé du composant
+                'label' => __('Why me picture'),    // le libellé du composant
                 'section' => $customSectionName,   // la section dans laquelle afficher le composant
                 'settings' => $customizableVariableName, // la variable configurable ('header-picture')
             ]
         )
     );
-
 
     // STEP E5 CUSTOMIZER Configuration du "petit crayon" qui permet de déclencher le customizer
 
@@ -74,10 +71,10 @@ function register_header_picture_customizer(WP_Customize_Manager $themeCustomize
 
 add_action(
     'customize_preview_init',   // Event pour charger les assets dédié à la préview du customizer
-    'wp_mysite_load_header_picture_customizer_assets'
+    'wp_mysite_load_whyme_picture_customizer_assets'
 );
 
-function wp_mysite_load_header_picture_customizer_assets()
+function wp_mysite_load_whyme_picture_customizer_assets()
 {
 
     // Nous chargeons notre css pour la preview du customizer afin de pouvoir surcharger les styles
@@ -88,11 +85,9 @@ function wp_mysite_load_header_picture_customizer_assets()
 
     wp_enqueue_script(
         'header-picture-customizer-js',
-        get_theme_file_uri('assets/customizers/header-picture.js'),
+        get_theme_file_uri('assets/customizers/whyme-picture.js'),
         [], // gestion des dépendances,
         false,
         true // nous demandons à wp de mettre le javascript dans le footer
     );
 }
-
-
