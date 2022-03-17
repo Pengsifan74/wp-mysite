@@ -52,18 +52,12 @@
 }
 
 /* Projects cpt */
-iframe {
-    width: 75rem;
-    height: 45rem;
+.projectTitle {
+    text-align: center;
+    margin-top: 2rem;
 }
 
-.iframeProject {
-    display: flex;
-    justify-content: center;
-}
-@media (max-with: 415px) {
-    iframe {
-        width: 80%;
-        max-height: 5rem;
-    }
+.projectCenter {
+    width: 100%;
+    text-align: center;
 }
