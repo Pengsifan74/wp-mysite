@@ -25,7 +25,7 @@ if($backgroundImage) {
                             <h2>Why hiring Me</h2>
                             <p>I am not the best WordPress developer ever, but I like coding, I really like WordPress and I work hard when I am passionate by something...</p>
                             <h5>CONTENT MANAGEMENT SYSTEM</h5>
-                            <p>My favorite CMS is WordPrees. Its a wonderful tool to work with and I can use plugins like elementor to build a website...</p>
+                            <p>My favorite CMS is WordPress. Its a wonderful tool to work with and I can use plugins like elementor to build a website...</p>
                             <h5>DEVELOPMENT SKILLS</h5>
                             <p>I am familiar and work on a daily basis with HTML, CSS, PHP, JavaScript, Bootstrap and other modern frameworks.</p>
 
