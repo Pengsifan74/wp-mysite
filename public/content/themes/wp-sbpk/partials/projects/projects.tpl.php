@@ -1,9 +1,30 @@
+<?php
+the_post();
+
+$articleId = get_the_ID();
+
+$hasImage = has_post_thumbnail($articleId);
+$hasLink = get_field('website_link');
+
+$cities = get_the_terms(
+    $post->ID,
+    'technology'
+);
+
+?>
+    
     <!-- Basic -->
     <div class="ex-basic-1 pt-5 pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-fluid mt-5 mb-3" src="<?= get_theme_file_uri('assets/images/project-details-large.jpg') ?>" alt="alternative">
+                <?php if ($hasLink) : ?>
+                    <div class="iframeProject"><iframe src="<?= get_field('website_link') ?>" frameborder="0" title="Tribute"></iframe></div>
+                <?php else : ?>
+                    $thumbnail = get_the_post_thumbnail_url(); ?>
+                    <img class="img-fluid mt-5 mb-3" src="<?= $thumbnail ?>" alt="picture of Tribut project">
+                <?php endif; ?>
+                
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
