@@ -21,7 +21,7 @@ $technologies = get_the_terms(
 <!-- end of title -->
 
 <!-- Basic -->
-<div class="ex-basic-1 pt-5 pb-5">
+<div class="ex-basic-1 pt-5 pb-2">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -43,11 +43,12 @@ $technologies = get_the_terms(
 
 
 <!-- Basic -->
-<div class="ex-basic-1 pt-4">
+<div class="ex-basic-1 pt-1">
     <div class="container">
         <div class="row">
             <div class="col-xl-10 offset-xl-1">
                 <p><?php the_content(); ?></p>
+                <p>You can check the code on <a href="<?= get_field('github') ?>" target="_blank">Github</a></p>
             </div> <!-- end of col -->
         </div> <!-- end of row -->
     </div> <!-- end of container -->
@@ -55,7 +56,7 @@ $technologies = get_the_terms(
 <!-- end of basic -->
 
 <!-- Basic -->
-<div class="ex-basic-1 pt-3 pb-5">
+<div class="ex-basic-1 pt-3 pb-2">
     <div class="container">
         <div class="row">
             <div class="col-xl-10 offset-xl-1">
@@ -63,21 +64,25 @@ $technologies = get_the_terms(
                 <h2 class="mb-4">Technologies & tools</h2>
 
                 <ul class="list-unstyled li-space-lg mb-5">
-                    <?php foreach ($technologies as $key =>$value) : ?>
+                    <?php foreach ($technologies as $key =>$value) :
+                        $technoLink = get_field('technoLink', 'technology_' . $value->term_id); ?>
                     <li class="media">
                         <i class="fas fa-square"></i>
                         <div class="media-body"><strong>
                                 <?= $value->name; ?>
-                            </strong></div>
+                            </strong> : if you want to know more about <?= $value->name; ?>, you can check the <a href="<?= $technoLink ?>" target="_blank">official website</a></div>
                         </li>
                         <?php endforeach; ?>
                 </ul>
 
-                <a class="btn-solid-reg mb-5" href="index.html">Back</a>
             </div> <!-- end of col -->
         </div> <!-- end of row -->
     </div> <!-- end of container -->
 </div> <!-- end of ex-basic-1 -->
 <!-- end of basic -->
+
+<div class="container">
+<p><?php get_template_part('partials/post-previous-next.tpl'); ?></p>
+</div>
 
 <!-- The rest of the layout for this page is in the file projects.init.php if needed later -->

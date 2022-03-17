@@ -17,6 +17,9 @@
     <!-- section (project) -->
     <?php get_template_part('partials/projects/projects.tpl'); ?>
 
+    <!-- Footer-->
+    <?php get_template_part('partials/footer.tpl'); ?>
+
     <!-- wp footer -->
     <?php get_footer(); ?>
 </body>
