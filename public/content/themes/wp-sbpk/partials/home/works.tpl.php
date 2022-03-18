@@ -1,69 +1,30 @@
+<?php
+$argProject = array(
+    'post_type' => 'project',
+    'post_status' => 'publish',
+    'posts_per_page' => 9,
+    'order' => 'ASC'
+);
+$dataProject = new WP_Query($argProject);
+?>
+    
     <!-- Works -->
     <div class="basic-4">
         <div class="container">
             <div class="row">
+            <?php while ($dataProject->have_posts()) : $dataProject->the_post(); ?>
+                    <?php $thumbnail = get_the_post_thumbnail_url(); ?> 
                 <div class="col-lg-4">
                     <div class="text-container">
                         <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="<?= get_theme_file_uri('assets/images/work-1.jpg') ?>" alt="alternative">
+                            <a href="<?= get_permalink() ?>">
+                                <img class="img-fluid" src="<?= $thumbnail; ?>" alt="alternative">
                             </a>
                         </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Zigoland, <strong>Project:</strong> started a new website from ground up for a new product <a class="blue" href="project.html">details</a></p>
+                        <p><a class="blue homeProjectText" href="<?= get_permalink() ?>"><?= the_title(); ?></a> : <?php the_excerpt(); ?></p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="<?= get_theme_file_uri('assets/images/work-2.jpg') ?>" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Visodream, <strong>Project:</strong> developed a new forum for the Visodream community <a class="blue" href="project.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="<?= get_theme_file_uri('assets/images/work-3.jpg') ?>" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Primoday, <strong>Project:</strong> complete redesign of their corporate website and platform <a class="blue" href="project.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="<?= get_theme_file_uri('assets/images/work-4.jpg') ?>" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Nextlite, <strong>Project:</strong> created a custom video editing and upload web app <a class="blue" href="project.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="<?= get_theme_file_uri('assets/images/work-5.jpg') ?>" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Syncnow, <strong>Project:</strong> web design for their corporate websites and landing pages <a class="blue" href="project.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="<?= get_theme_file_uri('assets/images/work-6.jpg') ?>" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Shifter, <strong>Project:</strong> started a new website from ground up for a new product <a class="blue" href="project.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
+                <?php endwhile; ?>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-4 -->

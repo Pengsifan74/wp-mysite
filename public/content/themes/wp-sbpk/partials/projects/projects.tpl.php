@@ -26,8 +26,12 @@ $technologies = get_the_terms(
         <div class="row">
             <div class="col-lg-12">
                 <?php if ($hasImage) :
-                    $thumbnail = get_the_post_thumbnail_url(); ?>
-                    <a href="<?= $hasWebsiteLink; ?>" target="_blank"><img class="img-fluid img-thumbnail mt-2 mb-3" src="<?= $thumbnail; ?>" alt="picture of Tribut project"></a>
+                    $thumbnail = get_the_post_thumbnail_url();
+                    if ($hasWebsiteLink) : ?>
+                        <a href="<?= $hasWebsiteLink; ?>" target="_blank"><img class="img-fluid img-thumbnail mt-2 mb-3" src="<?= $thumbnail; ?>" alt="picture of Tribut project"></a>
+                    <?php else : ?>
+                        <img class="img-fluid img-thumbnail mt-2 mb-3" src="<?= $thumbnail; ?>" alt="picture of Tribut project">
+                    <?php endif; ?>
                 <?php else : ?>
                     <p>NO DOCUMENT TO DISPLAY</p>
                 <?php endif; ?>
