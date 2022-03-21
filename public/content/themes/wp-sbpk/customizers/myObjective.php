@@ -27,7 +27,7 @@ function register_my_objective_text(WP_Customize_Manager $themeCustomizerObject)
         $customSectionName,    // identifiant de la section (custom-section-colors)
         [
             // la fonction __(...) permet de gérer l'I18N  (InternationalizatioN)
-            'title' => __("My Objective"), // libellé de la section
+            'title' => __("Homepage Texts"), // libellé de la section
             'priority' => 1   // dans quel ordre la section va s'afficher dans le menu , 0 correspond à "tout en haut" de la liste
         ]
     );
