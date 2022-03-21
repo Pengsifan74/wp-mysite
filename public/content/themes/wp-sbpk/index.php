@@ -20,9 +20,9 @@
     <?php get_template_part('partials/home/details.tpl'); ?>
     <?php get_template_part('partials/home/projects.tpl'); ?>
     <?php get_template_part('partials/home/works.tpl'); ?>
-    <?php get_template_part('partials/home/testimonials.tpl'); ?>
-    <?php get_template_part('partials/home/divider.tpl'); ?>
-    <?php get_template_part('partials/home/questions.tpl'); ?>
+    <!-- get_template_part('partials/home/testimonials.tpl'); -->
+    <!-- ('partials/home/divider.tpl'); -->
+    <!-- get_template_part('partials/home/questions.tpl'); -->
     <?php get_template_part('partials/home/contact.tpl'); ?>
 
     <!-- Footer-->
