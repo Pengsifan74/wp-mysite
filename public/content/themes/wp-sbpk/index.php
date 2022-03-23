@@ -23,7 +23,7 @@
     <!-- get_template_part('partials/home/testimonials.tpl'); -->
     <!-- ('partials/home/divider.tpl'); -->
     <!-- get_template_part('partials/home/questions.tpl'); -->
-    <?php get_template_part('partials/home/contact.tpl'); ?>
+    <!-- get_template_part('partials/home/contact.tpl'); -->
 
     <!-- Footer-->
     <?php get_template_part('partials/footer.tpl'); ?>
