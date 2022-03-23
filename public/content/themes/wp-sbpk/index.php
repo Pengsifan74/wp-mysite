@@ -14,6 +14,11 @@
     <!-- Header-->
     <?php get_template_part('partials/home/header-home.tpl'); ?>
 
+    <?php
+$contact = get_page('Contact');
+dump($contact);
+?>
+
     <!-- Section (home) -->
     <?php get_template_part('partials/home/about.tpl'); ?>
     <?php get_template_part('partials/home/services.tpl'); ?>

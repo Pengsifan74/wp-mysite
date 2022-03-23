@@ -47,7 +47,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a class="no-line" href="https://github.com/Brewalan74"><?= get_the_author() ?></a></p>
+                    <p class="p-small">Copyright © <a class="no-line" href="https://github.com/Brewalan74">Brewalan</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->

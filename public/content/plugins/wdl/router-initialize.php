@@ -3,11 +3,9 @@
 
 // déclaration du router. Nous allons avoir besoin de ce router dans de nombreux fichier. Ce n'est pas propre mais pour des raisons de simplicité de code ; nous déclarons ce router comme étant une variable globale
 
-use WDL\Controllers\ParticipationController;
 use WDL\Controllers\UserController;
 
 global $router;
-
 
 // instanciation du router
 $router = new AltoRouter();
@@ -18,6 +16,17 @@ $baseURI = dirname($_SERVER['SCRIPT_NAME']);
 $router->setBasePath($baseURI);
 
 // configuration des routes
+
+// Contact
+// $router->map(
+//     'GET',
+//     '/contact',
+//     function() {
+//         $userController = new UserController();
+//         $userController->contact();
+//     },
+//     'contact'
+// )
 /* DEMO
 $router->map(
     'GET', // surveille les appels HTTP de type GET

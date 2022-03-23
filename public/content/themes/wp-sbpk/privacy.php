@@ -19,6 +19,9 @@
     <!-- section (privacy) -->
     <?php get_template_part('partials/privacy/privacy.tpl'); ?>
 
+    <!-- Footer-->
+    <?php get_template_part('partials/footer.tpl'); ?>
+
     <!-- wp footer -->
     <?php get_footer(); ?>
 </body>

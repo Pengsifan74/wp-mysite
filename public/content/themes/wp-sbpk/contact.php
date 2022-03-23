@@ -2,10 +2,12 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- wp header -->
     <?php get_header(); ?>
 </head>
+
 <body data-spy="scroll" data-target=".fixed-top">
 
     <!-- Navigation-->
@@ -14,8 +16,8 @@
     <!-- Header-->
     <?php get_template_part('partials/header.tpl'); ?>
 
-        <!-- Contact -->
-        <div id="contact" class="form-1 bg-gray">
+    <!-- Contact -->
+    <div id="contact" class="form-1 bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -26,8 +28,10 @@
             <div class="row">
                 <div class="col-lg-12">
 
+                
+
                     <!-- Contact Form -->
-                    <form id="contactForm">
+                    <form id="contactForm" action="<?= get_theme_file_uri('traitement.php') ?>" method="post">
                         <div class="form-group">
                             <input type="text" class="form-control-input" id="cname" required>
                             <label class="label-control" for="cname">Name</label>
@@ -52,7 +56,11 @@
     </div> <!-- end of form-1 -->
     <!-- end of contact -->
 
+    <!-- Footer-->
+    <?php get_template_part('partials/footer.tpl'); ?>
+
     <!-- wp footer -->
     <?php get_footer(); ?>
 </body>
+
 </html>
