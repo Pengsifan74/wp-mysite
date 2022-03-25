@@ -15,8 +15,8 @@
     <?php get_template_part('partials/home/header-home.tpl'); ?>
 
     <?php
-$contact = get_page('Contact');
-dump($contact);
+// $contact = get_page('Contact');
+// dump($contact);
 ?>
 
     <!-- Section (home) -->
