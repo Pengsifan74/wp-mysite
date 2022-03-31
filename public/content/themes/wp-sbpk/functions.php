@@ -1,9 +1,5 @@
 <?php
 
-// Debug:
-// echo __FILE__ . ':' . __LINE__;
-// exit();
-
 require __DIR__ . '/customizers/header-picture.php';
 require __DIR__ . '/customizers/myObjective.php';
 require __DIR__ . '/customizers/whyme-picture.php';
@@ -95,6 +91,14 @@ if (!function_exists('sbpkwpdev_loadAssets')) {
             '1.0.0',
             true
         );
+
+        wp_enqueue_script(
+            'wp-mysite-scripts',
+            get_theme_file_uri('assets/js/wp_mysite.js'),
+            [],
+            '1.0.0',
+            true
+        );
     }
 }
 
@@ -102,3 +106,9 @@ add_action(
     'wp_enqueue_scripts',
     'sbpkwpdev_loadAssets'
 );
+
+// hide WP Version
+remove_action("wp_head", "wp_generator");
+
+// Deactivate files edit into WP
+define('DISALLOW_FILE_EDIT',true);
