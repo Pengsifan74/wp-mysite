@@ -86,6 +86,7 @@ $countries = get_the_terms(
                 <?php else : ?>
                     <p>NO DOCUMENT TO DISPLAY</p>
                 <?php endif; ?>
+                <div class="picBottom"></div>
             </div>
 
         </article>
